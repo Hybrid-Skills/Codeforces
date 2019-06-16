@@ -59,6 +59,7 @@ def check_plus(q, total=0):
                             total -= 1
                         else:
                             break
+                    break
 
     # Checks if there are extra *s in the matrix and number of pluses
     if total == 0 and plus == 1:
