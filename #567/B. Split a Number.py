@@ -17,17 +17,19 @@ else:
     str_x_right = str(n)[0:(l//2) + 1]
     str_y_right = str(n)[(l//2)+1:l]
 
-i=1
-j=0
+i = 0
+j = 0
 
-while str_y_right[j] == "0" and str_x_left[-i] == "0":
-    j += 1
-    i += 1
+if str_y_right[0] == '0':
+    j = len(str_y_right) - len(str(int(str_y_right)))
+
+if str_y_left[0] == '0':
+    i = len(str_x_left[::-1]) - len(str(int(str_x_left[::-1])))
 
 str_x_right += "0"*j
 str_y_right = str_y_right[j:]
-str_y_left = str_x_left[-i:] + str_y_left
-str_x_left = str_x_left[:-i]
+str_y_left = str_x_left[-i-1:] + str_y_left
+str_x_left = str_x_left[:-i-1]
 
 sum_moving_right = int(str_x_right) + int(str_y_right)
 
