@@ -22,3 +22,5 @@ A = list(map(float, input().split()))
 B = list(map(float, input().split()))
 C = list(map(float, input().split()))
 
+
+
