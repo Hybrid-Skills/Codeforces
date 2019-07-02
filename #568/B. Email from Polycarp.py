@@ -21,18 +21,19 @@
 
 def check_possible(original, typed):
     j = 0
+    original_passed = False
     for char in typed:
-        try:
-            if char == original[j]:
+        if char == original[j]:
+            if j < len(original) - 1:
                 j += 1
-        except IndexError:
-            pass
-        if char == original[abs(j-1)]:
+            else:
+                original_passed = True
+        elif j != 0 and char == original[(j-1)] and not original_passed:
             pass
         else:
             return 'NO'
     else:
-        if j == len(original):
+        if original_passed:
             return 'YES'
         else:
             return 'NO'
