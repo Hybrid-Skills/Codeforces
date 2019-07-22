@@ -4,7 +4,6 @@ n = len(s)
 # x = 0
 # y = n-1
 # ans = ''
-# flag = False
 #
 # while x < y - 2:
 #     if s[x] == s[y] or s[x] == s[y-1]:
