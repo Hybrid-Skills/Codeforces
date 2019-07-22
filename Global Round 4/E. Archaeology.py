@@ -1,5 +1,6 @@
 s = input()
 n = len(s)
+
 # x = 0
 # y = n-1
 # ans = ''
