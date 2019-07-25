@@ -5,11 +5,11 @@ for _ in range(int(input())):
 
     for i in range(n):
         if a[i] % 2 == 1:
-            ans.append(i+1)
+            ans.append(i + 1)
 
     if len(ans) >= k and len(ans) % 2 == k % 2:
         print('YES')
-        for i in ans[:k-1]:
+        for i in ans[:k - 1]:
             print(i, end=' ')
         print(n)
     else:

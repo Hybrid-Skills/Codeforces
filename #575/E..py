@@ -15,7 +15,7 @@ for _ in range(int(input())):
                 print(x - 1 + 2 * j, y)
 
             if 2 * b + 1 >= w > b + 1:
-                for j in range(min(w - b+1, b)):
+                for j in range(min(w - b-1, b)):
                     print(x + 2 * j, y - 1)
 
             if 3 * b + 1 >= w > 2 * b + 1:
@@ -37,7 +37,7 @@ for _ in range(int(input())):
                 print(x - 1 + 2 * j, y)
 
             if 2 * w + 1 >= b > w + 1:
-                for j in range(min(b - w + 1, w)):
+                for j in range(min(b - w - 1, w)):
                     print(x + 2 * j, y - 1)
 
             if 3 * w + 1 >= b > 2 * w + 1:
