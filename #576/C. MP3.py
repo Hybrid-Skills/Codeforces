@@ -4,7 +4,7 @@ a = [int(i) for i in input().split()]
 
 kn = len(set(a))
 
-kp = int(2 ** (I * 8 / n))
+kp = int(2 ** (I * 8 // n))
 
 red = max(kn - kp, 0)
 
