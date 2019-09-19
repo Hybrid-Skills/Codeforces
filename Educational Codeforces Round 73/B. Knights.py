@@ -1,22 +1,9 @@
 n = int(input())
 
-for i in range(n//2):
-    for i in range(n//2):
-        print('W',end='')
-        print('B',end='')
-    if n%2 == 1:
-        print('W')
-    else:
-        print('')
-    for i in range(n//2):
-        print('B',end='')
-        print('W',end='')
-    if n%2 == 1:
-        print('B')
-    else:
-        print('')
-if n%2 == 1:
-    for i in range(n//2):
-        print('W',end='')
-        print('B',end='')
-    print('W')
+for i in range(n):
+    for j in range(n):
+        if (i+j)%2 == 0:
+            print('W', end='')
+        else:
+            print('B', end='')
+    print()

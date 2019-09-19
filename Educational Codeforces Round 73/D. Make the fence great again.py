@@ -10,4 +10,4 @@ for _ in range(int(input())):
 
     for i in range(1, n):
         if planks[i-1][0] == planks[i][0]:
-
+            d1.append(d1[-1] + planks[i][2])
