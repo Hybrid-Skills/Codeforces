@@ -20,7 +20,6 @@ for i in range(k-1,-1,-1):
         if l[0] == 0:
             for j in range(k):
                 l[j] = 1
-            ans +=
     # elif s[i] == '1' and i < k:
     #     if '1' not in s[i+1:k+1]:
     #         if l[min(n - 1, i + k)] == 0:
